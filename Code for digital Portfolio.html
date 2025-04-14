@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vaishnavi's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+    }
+
+    body {
+      overflow-x: hidden;
+      color: #1a1a1a;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 40px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .section-heading {
+      font-size: 3em;
+      margin-bottom: 20px;
+      animation: highlight 3s infinite;
+    }
+
+    .about-text {
+      font-size: 1.8em;
+      line-height: 1.6;
+      max-width: 1000px;
+      margin-top: 20px;
+    }
+
+    #home {
+      background: url('vaishnavi.jpg') no-repeat center center/cover;
+      color: white;
+    }
+
+    #about {
+      background: linear-gradient(to bottom, #caa8c2, #a8b0df);
+    }
+
+    #skills {
+      background: linear-gradient(to bottom, #82c3cc, #abecbc);
+    }
+
+    #projects {
+      background: linear-gradient(to bottom, #f0f4c3, #2ba6d6);
+    }
+
+    #certificates {
+      background: linear-gradient(to bottom, #f1ebea, #8f5c4c);
+    }
+
+    #accounts {
+      background: linear-gradient(to bottom, #d7ccc8, #bcaaa4);
+    }
+
+    .navbar {
+      background: #1a030c;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    .navbar a:hover {
+      color: #fbbf24;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h1, h2, h3, p, li, a {
+      color: #1a1a1a;
+    }
+
+    #home h1, #home h2, #home p {
+      color: white;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      margin: 10px 0;
+      font-size: 1.5em;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes highlight {
+      0% { color: #ff0000; }
+      50% { color: #217aad; }
+      100% { color: #ff0000; }
+    }
+
+    .project-cards {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .project-card {
+      background-color: #ce8736;
+      padding: 40px;
+      width: 350px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      color: white;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      font-size: 1.5em;
+      color: white;
+      background: #2563eb;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+
+    .image-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .square-img {
+      width: 500px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer {
+      background: #1e3a8a;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#accounts">My Accounts</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <div class="container">
+      <h1 style="text-align: center; color: white;">Vaishnavi Suryawanshi</h1>
+      <h1 style="text-align: center; color: white;">Web Developer | Designer | Programmer</h1>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-heading">About Me</h2>
+      <p class="about-text">
+        Hi, I'm Vaishnavi Suryawanshi, a Computer Engineering student at MITAOE. I'm passionate about web development, design, and programming, and I love creating digital experiences that are both functional and visually appealing.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-heading">Technical Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Python</li>
+      </ul>
+      <h2 class="section-heading">Soft Skills</h2>
+      <ul>
+        <li>Calm and able to handle any problem</li>
+        <li>Motivated</li>
+        <li>Having a Positive approach to life</li>
+        <li>Polite</li>
+        <li>Hardworking</li>
+        <li>Focused</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-heading">Projects</h2>
+      <div class="project-cards">
+        <div class="project-card">
+          <h3>Bank Account Management</h3>
+          <p>A project that tracks credited and debited amounts from a bank account.</p>
+        </div>
+        <div class="project-card">
+          <h3>Full-Stack Application</h3>
+          <p>A full-stack web application using Node.js and MongoDB.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <div class="container">
+      <h2 class="section-heading">Certificates</h2>
+      <div class="image-row">
+        <img src="Certificate1.png" alt="Certificate 1" class="square-img">
+        <img src="Certificate2.png" alt="Certificate 2" class="square-img">
+      </div>
+    </div>
+  </section>
+
+  <section id="accounts">
+    <div class="container">
+      <h2 class="section-heading">My Accounts</h2>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/vaishnavi" target="_blank">LinkedIn</a>
+        <a href="https://github.com/vaishnavi" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Vaishnavi Suryawanshi. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
